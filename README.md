@@ -80,5 +80,54 @@ CSS INTERNAL dia adalah CSS yang ditempat kan di dalam file html tepat nya dibag
 ```
 ### NOTE (Saya memilih warna sesuai kesukaan saya)
 
+## 3). MENAMBAHKAN INLINE CSS 
+### Contoh code beserta hasil nya dan juga penempatan CSS nya!
+![menambahkan_INLINE_CSS](img/Css_Inline.png)
+**PENJELASAN**     
+
+CSS ***INLINE*** sendiri yaitu CSS yang pendeklarasian nya ada pada tag html nya sendiri dengan menggunakan **style** seperti contoh di atas ,saya mendeklrasikan CSS ***INLINE*** pada tag (p) dengan Property (text-align) dan juga (color) CSS ***INLINE*** sendiri sangat spesifik dia hanyan merubah pada tag yang hanya diberi **style** CSS ***INLINE*** sangat kuat maksud nya yaitu jika kita melakukan code yang sama dengan deklarasi yang berbeda yang terpanggil hanya ***INLINE*** karena ***INLINE*** memiliki prioritas tinggi dibanding ***INTERNAL*** atau pun ***EKSTERNAL*** begitu kurang lebih penjelasan tentang CSS ***INLINE***
+
+## Source Code
+```html
+<!-- Tag (p) dibawah menggunakan CSS INLINE -->
+        <p style="text-align: center; color: #f35b04;">Kami sedang belajar HTML dan CSS dasar, pada mata kuliah <b>pemrograman web </b>di <i>Universitas Pelita
+                Bangsa</i>. Pelajaran pertama yang kami dapat adalah membuat tampilan web sederhana dalam rangka
+            mengenal tag-tag dasar HTML dan CSS.</p>
+```
+
+## 4). MEMBUAT CSS EKSTERNAL
+### Contoh code dan penempatan CSS EKSTERNAL
+![menambahkan_CSS_EKSTERNAL](img/Penempatan_Link_CSS_EKSTERNAL.png)
+
+Tepat pada **LINE CODE 10** di dalam **head** link CSS ***EKSTERNAL*** saya tempatkan.   
+Kemudian buat file CSS terlebih dahulu seperti contoh saya yaitu **style_eksternal.css** dan mulai mengoding css di file itu.
+
+### Contoh code beserta hasil nya
+![code_dan_hasil_CSS_EKSTERNAL](img/CSS_Eksternal.png)
+**PENJELASAN**
+
+CSS ***EKSTERNAL*** adalah CSS yang dimana file nya terpisah dengan html itu sendiri dengan melalui link penempatan nya,CSS  ***EKSTERNAL*** sangat direkomendasikan oleh para programmer website developer dalam membuat gaya pada CSS,Karena 1 file CSS ***EKSTERNAL*** bisa untuk banyak file HTML,itu mengapa sangat direkomendasikan banyak programmer kelebihan dari CSS ***EKSTERNAL*** di (a:hover) saya sedikit menambahkan (Border-Radius: 4px;) agar terlihat menarik.
+
+## Source Code
+```css
+nav{
+    background: #00b4d8;
+    color: white;
+    padding: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px ;
+}
+nav .active,
+nav a:hover{
+    background: #081c15 ;
+    border-radius: 4px;
+}
+```
+
+
+ 
 
 
