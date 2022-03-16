@@ -162,9 +162,69 @@ Selain itu ada juga Selector **Class** sama seperti **ID** **Class** juga dapat 
 }
 ```
  
- ## UNTUK PRAKTIKUM KALI INI CUKUP ITU JIKA ADA KEKURANGAN MOHON DI MAAFKAN
+## PERTANYAAN DAN TUGAS!
+
+### 1). Lakukan Eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS  dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah  dari modul ini.                                       
 ---------------------------------------------------------------------------
 
-# SELESAI
+**JAWABAN**  
+![jawaban_no1](img/jawaban_no1.png)
+
+Disitu saya menambahkan **Border-radius:4px;** pada nav a:hover nya,karena agar terlihat lebih rapih contoh 
+```css
+border-radius: 4px;
+```
+dan juga saya menambahkan warna h1 dengan menggunakan selector **ID** untuk mengubah warna padding dan text-align contoh
+```css
+#artikel{
+    background: #ade8f4;
+    border: 1px solid #8ecae6;
+    min-height: 100px;
+    padding: 10px;
+}
+#artikel h1{
+    text-align: left;
+    border: 0;
+    color: #fff;
+```
+### 2). Apa perbedaan pendeklarasian CSS elemen {h1} dengan {#intro h1} berikan penjelasan nya!
+-----------------------------------------------------------------------------
+
+**JAWABAN**
+
+  Jadi jika hanya mendeklarasian elemen **{h1}** saja berarti semua elemen **{h1}** akan berubah oleh CSS Sedangkan jika mendeklarasikan **{#intro h1}** hanya elemen h1 dengan deklrasi **{#intro h1}** saja yang berubah,karena **ID** itu unik.
+
+  ### 3). Apabila ada  deklrasi CSS secara internal,lalu ditambahkan CSS Eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser ? Berikan penjelasan dan contoh nya!
+----------------------------------------------------------------------------------------------                                                                    
+
+**JAWABAN**
+
+Ketika kita mendeklarasikan secara bersamaan antara ***INTERNAL*** ***EKSTERNAL*** dan ***INLINE*** yang akan ditampilkan pada Browser adalah **INLINE** Karena **INLINE** Memiliki prioritas dibanding ***EKSTERNAL*** atau pun ***INTERNAL*** seperti contoh yang saya buat,saya membuat dokumen baru HTML kemudian saya buat Elemen ***{h1}*** yang kemudian saya akan deklarasikan di CSS ***INTERNAL*** ***EKSTERNAL*** dan juga ***INLINE*** Dengan property ***{color}*** dengan warna yang berbeda,jika ***INTERNAL*** {color: red} sementara ***EKSTERNAL*** {color:green;} dan ***INLINE*** {color: pink;} yang terpanggil dibrowser adalah ***INLINE*** karena memiliki prioritas.
+
+## Contoh Hasil dan Code
+![jawaban_no3](img/jawaban_no3.png)
+**DI ATAS ADALAH DEKLARASI INLINE DAN INTERNAL SEMENTARA FOTO DIBAWAH ADALAH DEKLARASI EKSTERNAL NYA**
+
+![no3](img/no3.png)
+
+jadi yang terpanggil adalah ***CSS INLINE*** karena memiliki prioritas tinggi dibanding CSS deklarasi lain nya.
+
+### 4). Pada sebuah elemen HTML terdapat ID dan Class,apabila masing-masing selector tersebut  terdapat deklarasi CSS , maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! 
+```html
+(<p id="paragraf-1" class="text-paragraf">)
+```
+----------------------------------------------------------------------------------------------
+
+**JAWABAN**
+
+Yang terpanggil dibrowser adalah **ID** karena **ID** bersifat unik berbeda dengan **Class** **Class** bisa digunakan banyak sementara **ID** hanya tertentu saja itu kenapa **ID** unik dan yang terpanggil di browser adalah **ID** .
+
+## Contoh hasil dan Code nya
+
+![no4](img/no4.png)
+
+Disitu saya menambahkan property {color} dan {text-align} untuk **ID** {color: orange} dan {text-align: center} sementara **Class** yaitu {color:blueviolet} dan {text-align: left} namun yang terpanggil di browser adalah **ID** yang property nya {color: orange} dan juga {text-align: center} 
 
 
+## UNTUK PRAKTIKUM KALI INI CUKUP SAMPAI DISINI SAMPAI BERTEMU DIPERTEMUAN BERIKUT NYA 
+# **TERIMA KASIH**
