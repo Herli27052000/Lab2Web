@@ -13,3 +13,27 @@ nav a:hover{
     background: #081c15 ;
     border-radius: 4px;
 }
+/* ID Selector */
+#artikel{
+    background: #ade8f4;
+    border: 1px solid #8ecae6;
+    min-height: 100px;
+    padding: 10px;
+}
+#artikel h1{
+    text-align: left;
+    border: 0;
+    color: #fff;
+}
+/* Class Selector */
+.btn{
+   padding: 15px 20px; 
+   background: #ff0a54 ;
+   color: #fff;
+   display: inline-block;
+   margin: 10px;
+   text-decoration: none;
+}
+.btn-primary{
+    background: #f0efeb ;
+}
